@@ -1,135 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jigsaw Fauji — AI Car Video Prompt</title>
-<style>
-*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:#0b0d10;color:#f4f4f4}
-.wrap{max-width:900px;margin:auto;padding:28px 16px 50px}
-.card{background:#14181d;border:1px solid #2a3038;border-radius:20px;padding:24px;box-shadow:0 15px 50px #0008}
-h1{margin:0 0 8px;font-size:28px}.sub{color:#aeb6c1;margin-bottom:22px}
-textarea{width:100%;min-height:620px;background:#0b0d10;color:#e9edf2;border:1px solid #303741;border-radius:14px;padding:18px;line-height:1.55;font-size:14px;resize:vertical}
-button{border:0;border-radius:12px;padding:13px 18px;font-weight:700;cursor:pointer;margin-top:14px;margin-right:8px}
-.copy{background:#fff;color:#111}.share{background:#252c35;color:#fff}.status{display:inline-block;color:#8fe388;margin-left:6px;font-size:14px}
-.footer{margin-top:18px;color:#77818d;font-size:12px}
-</style>
-</head>
-<body>
-<div class="wrap">
-<div class="card">
-<h1>🎬 Jigsaw Fauji — AI Car Video Prompt</h1>
-<div class="sub">Photorealistic cinematic Mercedes commercial • Strict Face Lock • Video 1 motion reference</div>
-<textarea id="prompt" readonly>Use Video 1 as the exact reference for motion, performance, camera movement, framing, timing, pacing, gestures, body language and overall choreography. Use Image 1 and Image 2 ONLY as character identity and appearance references.
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="jigsaw_fouji — AI video prompts, image prompts, reels ideas and creative AI resources.">
+<title>jigsaw_fouji — AI Prompt & Video Hub</title><style>*{box-sizing:border-box}body{margin:0;background:#090a0f;color:#f5f5f7;font-family:Arial,sans-serif}a{text-decoration:none;color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 5%}header{position:sticky;top:0;z-index:5;background:#0d0e14ee;border-bottom:1px solid #292b35;backdrop-filter:blur(10px)}nav{height:68px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:23px;font-weight:900}.logo b{color:#9b6cff}nav a{margin-left:18px;color:#bbb;font-size:14px}.hero{text-align:center;padding:65px 0;background:radial-gradient(circle at top,#301957,#090a0f 62%)}.badge,.tag{display:inline-block;padding:7px 11px;border-radius:20px;background:#26183b;color:#d8c6ff;font-size:12px}h1{font-size:clamp(38px,7vw,65px);margin:16px 0}.grad{color:#a978ff}.muted{color:#999daa;line-height:1.6}.search{max-width:650px;margin:25px auto;display:flex;background:#12141c;border:1px solid #30333f;border-radius:14px;padding:5px}.search input{flex:1;background:none;border:0;outline:0;color:#fff;padding:13px;font-size:15px}.btn{background:#7c3aed;color:#fff;border:0;border-radius:10px;padding:12px 17px;font-weight:800;cursor:pointer}section{padding:45px 0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}.card{background:#11131a;border:1px solid #292c37;border-radius:18px;overflow:hidden}.thumb{height:150px;display:grid;place-items:center;font-size:45px;background:linear-gradient(135deg,#24133a,#12151d)}.body{padding:18px}.body h3{margin:10px 0 7px}.body p{font-size:14px;color:#999daa;line-height:1.5}.actions{display:flex;gap:8px;margin-top:14px}.actions .btn{flex:1;text-align:center}.share{background:#222532!important}.promptbox{background:#090a0f;border:1px solid #282b36;border-radius:14px;padding:18px;white-space:pre-wrap;line-height:1.6;color:#c9cad3}.video{margin-top:20px;padding:30px;border:1px solid #292c37;border-radius:18px;background:#11131a}footer{border-top:1px solid #252733;padding:28px 0;color:#858895;text-align:center;font-size:13px}@media(max-width:750px){.grid{grid-template-columns:1fr 1fr}nav div:last-child{display:none}}@media(max-width:520px){.grid{grid-template-columns:1fr}}</style></head><body>
+<header><div class="wrap"><nav><a class="logo" href="index.html"><b>jigsaw</b>_fouji</a>
+<div><a href="#categories">Categories</a><a href="#latest">Latest</a><a href="#popular">Popular</a><a href="#videos">Videos</a></div></nav></div></header>
 
-CHARACTER IDENTITY — STRICT FACE LOCK
+<div class="hero"><div class="wrap"><div class="badge">🤖 AI PROMPT & VIDEO HUB</div>
+<h1>Welcome to <span class="grad">jigsaw_fouji</span></h1>
+<p class="muted">AI Video Prompts • AI Image Prompts • Reels Ideas • Creative Tools — all in one place.</p>
+<div class="search"><input id="q" placeholder="Search car, couple, fauji, cinematic..."><button class="btn" onclick="findCards()">Search</button></div></div></div>
 
-Preserve the character's exact facial identity throughout the entire video. The character must remain the same person as shown in Image 1 and Image 2 in every frame.
+<section id="categories"><div class="wrap"><h2>Explore Categories</h2><p class="muted">Find everything quickly.</p>
+<div class="grid">
+<div class="card"><div class="body"><div class="thumb">🎬</div><h3>AI Video</h3><p>Video-generation prompts and cinematic concepts.</p></div></div>
+<div class="card"><div class="body"><div class="thumb">🖼️</div><h3>AI Image</h3><p>Professional photo and image-generation prompts.</p></div></div>
+<div class="card"><div class="body"><div class="thumb">❤️</div><h3>Couple</h3><p>Romantic and couple creative prompts.</p></div></div>
+<div class="card"><div class="body"><div class="thumb">🪖</div><h3>Fauji</h3><p>Uniform, duty and cinematic fauji concepts.</p></div></div>
+<div class="card"><div class="body"><div class="thumb">📱</div><h3>Reels & Social</h3><p>Short-video concepts, captions and keywords.</p></div></div>
+<div class="card"><div class="body"><div class="thumb">🤖</div><h3>AI Tools</h3><p>Useful AI resources collected in one place.</p></div></div>
+</div></div></section>
 
-Preserve the exact face shape, forehead, eyebrows, eyes, nose, lips, cheek structure, jawline, chin, beard, skin tone, natural skin texture, hairline and hairstyle.
+<section id="latest"><div class="wrap"><h2>🆕 Latest Prompts</h2><p class="muted">Newest additions to jigsaw_fouji.</p>
+<div class="grid"><article class="card" data-key="mercedes luxury car — cinematic commercial ai video">
+<div class="thumb">🚘</div><div class="body"><span class="tag">AI Video</span>
+<h3>Mercedes Luxury Car — Cinematic Commercial</h3><p>Photorealistic luxury-car commercial with strict face identity preservation.</p>
+<div class="actions"><a class="btn" href="mercedes-luxury-car.html">View Prompt</a>
+<button class="btn share" onclick="sharePage('Mercedes Luxury Car — Cinematic Commercial','mercedes-luxury-car.html')">↗ Share</button></div></div></article><article class="card" data-key="romantic couple — cinematic ai video couple">
+<div class="thumb">❤️</div><div class="body"><span class="tag">Couple</span>
+<h3>Romantic Couple — Cinematic AI Video</h3><p>A cinematic romantic couple video concept with natural movement and premium visual style.</p>
+<div class="actions"><a class="btn" href="romantic-cinematic-couple.html">View Prompt</a>
+<button class="btn share" onclick="sharePage('Romantic Couple — Cinematic AI Video','romantic-cinematic-couple.html')">↗ Share</button></div></div></article><article class="card" data-key="fauji cinematic walk — ai video fauji">
+<div class="thumb">🪖</div><div class="body"><span class="tag">Fauji</span>
+<h3>Fauji Cinematic Walk — AI Video</h3><p>A powerful cinematic uniform walk concept for AI video generation.</p>
+<div class="actions"><a class="btn" href="fauji-cinematic-walk.html">View Prompt</a>
+<button class="btn share" onclick="sharePage('Fauji Cinematic Walk — AI Video','fauji-cinematic-walk.html')">↗ Share</button></div></div></article><article class="card" data-key="professional cinematic portrait — ai image ai image">
+<div class="thumb">📸</div><div class="body"><span class="tag">AI Image</span>
+<h3>Professional Cinematic Portrait — AI Image</h3><p>A professional cinematic portrait prompt designed for realistic image generation.</p>
+<div class="actions"><a class="btn" href="cinematic-portrait.html">View Prompt</a>
+<button class="btn share" onclick="sharePage('Professional Cinematic Portrait — AI Image','cinematic-portrait.html')">↗ Share</button></div></div></article></div></div></section>
 
-DO NOT redesign, beautify, smooth, sharpen, reshape, reconstruct, reinterpret or alter the face.
+<section id="popular"><div class="wrap"><h2>🔥 Popular Prompts</h2><p class="muted">Prompts ready for sharing.</p>
+<div class="grid"><article class="card" data-key="mercedes luxury car — cinematic commercial ai video">
+<div class="thumb">🚘</div><div class="body"><span class="tag">AI Video</span>
+<h3>Mercedes Luxury Car — Cinematic Commercial</h3><p>Photorealistic luxury-car commercial with strict face identity preservation.</p>
+<div class="actions"><a class="btn" href="mercedes-luxury-car.html">View Prompt</a>
+<button class="btn share" onclick="sharePage('Mercedes Luxury Car — Cinematic Commercial','mercedes-luxury-car.html')">↗ Share</button></div></div></article><article class="card" data-key="professional cinematic portrait — ai image ai image">
+<div class="thumb">📸</div><div class="body"><span class="tag">AI Image</span>
+<h3>Professional Cinematic Portrait — AI Image</h3><p>A professional cinematic portrait prompt designed for realistic image generation.</p>
+<div class="actions"><a class="btn" href="cinematic-portrait.html">View Prompt</a>
+<button class="btn share" onclick="sharePage('Professional Cinematic Portrait — AI Image','cinematic-portrait.html')">↗ Share</button></div></div></article><article class="card" data-key="romantic couple — cinematic ai video couple">
+<div class="thumb">❤️</div><div class="body"><span class="tag">Couple</span>
+<h3>Romantic Couple — Cinematic AI Video</h3><p>A cinematic romantic couple video concept with natural movement and premium visual style.</p>
+<div class="actions"><a class="btn" href="romantic-cinematic-couple.html">View Prompt</a>
+<button class="btn share" onclick="sharePage('Romantic Couple — Cinematic AI Video','romantic-cinematic-couple.html')">↗ Share</button></div></div></article></div></div></section>
 
-No face replacement. No identity drift. No facial morphing. No face warping. No facial deformation. No artificial beautification. No age change. No change in facial proportions.
+<section id="videos"><div class="wrap"><h2>🎥 Video Gallery</h2><p class="muted">Your generated videos can be added here.</p>
+<div class="video"><h3>Featured AI Video</h3><p class="muted">This section is ready for video embeds and links.</p></div></div></section>
 
-The face must remain visually consistent and recognizable as the exact same person from Image 1 and Image 2 from the first frame to the last frame.
-
-OUTFIT & APPEARANCE
-
-Preserve the exact outfit shown in the character references:
-- White blazer
-- Dark brown shirt
-- Black sunglasses
-- Same hairstyle
-- Same overall appearance
-
-Keep clothing colors, textures, patterns, fit, proportions and details accurate and consistent throughout the entire video. Do not change, replace or redesign the outfit.
-
-PERFORMANCE & CHOREOGRAPHY
-
-Recreate the performance from Video 1 as closely as possible.
-
-Match the reference video precisely in body movements, walking/movement pattern, hand gestures, arm movements, head movements, shoulder movements, body posture, facial performance, gesture timing, movement rhythm, pacing and overall choreography.
-
-Do not invent new movements or add unnecessary gestures. The character should perform the same actions at the same moments as in Video 1.
-
-FACIAL PERFORMANCE
-
-Keep the expression cool, confident, natural and controlled.
-
-Do NOT create a big smile, exaggerated grin, laughing expression, goofy expression, overacting or artificially dramatic facial expressions.
-
-Maintain a subtle, relaxed expression with a slight natural smirk only when it exists in Video 1.
-
-Keep mouth movements restrained and realistic. Maintain accurate facial proportions during every head movement. Keep natural eye direction, realistic blinking, subtle facial movement, natural lip movement and realistic mouth motion.
-
-Do not change the jawline, nose, eyes, lips, beard or overall facial structure during movement.
-
-CAMERA & FRAMING
-
-Use Video 1 as the exact camera reference.
-
-Match camera angle, camera height, camera distance, perspective, framing, subject position, camera movement, camera speed, camera direction, zoom/push-in/pull-out and tracking movement.
-
-Do not introduce new camera angles or unnecessary cinematic movements that are not present in Video 1.
-
-MOTION QUALITY
-
-Create realistic human movement matching Video 1.
-
-Hands and fingers must remain anatomically correct. Avoid distorted hands, extra fingers, missing fingers, deformed arms, broken wrists, rubber-like limbs, unnatural body bending, floating/sliding feet, jerky movement or sudden position changes.
-
-Maintain realistic body proportions and natural physics throughout the entire video.
-
-VISUAL STYLE
-
-Create photorealistic cinematic footage with natural skin texture, realistic lighting, realistic shadows, accurate reflections, detailed fabric texture, natural depth of field, high dynamic range, sharp but realistic details, professional DSLR/cinematic camera quality and smooth natural camera movement.
-
-Use a premium luxury-car commercial aesthetic.
-
-The final video should look like a real professionally filmed Mercedes commercial, not an AI-generated animation.
-
-Maintain realistic lighting and reflections on the vehicle, sunglasses, clothing and surrounding environment.
-
-TEMPORAL CONSISTENCY
-
-Maintain complete visual consistency from the first frame to the final frame.
-
-The character's face, hair, beard, sunglasses, outfit, body proportions, skin tone and identity must remain consistent throughout the entire video.
-
-No flickering. No identity changes. No sudden face changes. No clothing changes. No hairstyle changes. No inconsistent body proportions.
-
-FINAL QUALITY CONTROL
-
-Prioritize the following:
-1. Exact character identity and face preservation
-2. Exact motion and choreography from Video 1
-3. Accurate outfit and appearance
-4. Natural human movement
-5. Accurate camera movement and framing
-6. Photorealistic cinematic quality
-
-The final result must appear as if the same real person from Image 1 and Image 2 was physically filmed performing the exact performance from Video 1.
-
-Do not alter the person's identity or facial appearance under any circumstances.</textarea>
-<br>
-<button class="copy" onclick="copyPrompt()">📋 Copy Prompt</button>
-<button class="share" onclick="sharePage()">🔗 Share</button>
-<span class="status" id="status"></span>
-<div class="footer">Jigsaw Fauji • AI Video Prompt</div>
-</div>
-</div>
+<footer><div class="wrap"><b>jigsaw_fouji</b><br>AI Prompts • AI Videos • Creative Tools<br><br>© 2026 jigsaw_fouji</div></footer>
 <script>
-async function copyPrompt(){
- const t=document.getElementById('prompt').value;
- await navigator.clipboard.writeText(t);
- document.getElementById('status').textContent='Copied!';
- setTimeout(()=>document.getElementById('status').textContent='',1800);
+function findCards(){
+ let q=document.getElementById('q').value.toLowerCase().trim();
+ document.querySelectorAll('#latest .card,#popular .card').forEach(c=>c.style.display=(!q||c.dataset.key.includes(q))?'block':'none');
+ document.getElementById('latest').scrollIntoView({behavior:'smooth'});
 }
-async function sharePage(){
- if(navigator.share) await navigator.share({title:document.title,text:'Jigsaw Fauji — AI Car Video Prompt',url:location.href});
- else {await navigator.clipboard.writeText(location.href);document.getElementById('status').textContent='Page link copied!';}
+function sharePage(t,f){
+ let u=new URL(f,location.href).href;
+ if(navigator.share) navigator.share({title:t,text:'jigsaw_fouji prompt: '+t,url:u});
+ else {navigator.clipboard.writeText(u);alert('Link copied!');}
 }
-</script>
-</body>
-</html>
+</script></body></html>
