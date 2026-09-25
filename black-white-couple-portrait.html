@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Black & White Romantic Couple Portrait | jigsaw_fouji</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #0d0d0d;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 850px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.header p {
+  color: #aaa;
+  margin: 0;
+}
+
+.card {
+  background: #191919;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.4);
+}
+
+.category {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.prompt-box {
+  background: #050505;
+  border: 1px solid #333;
+  border-radius: 14px;
+  padding: 18px;
+  margin-top: 15px;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #eeeeee;
+  margin: 0;
+}
+
+.copy-btn {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 15px;
+  background: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.copy-btn:active {
+  transform: scale(0.98);
+}
+
+.info {
+  margin-top: 20px;
+  padding: 15px;
+  background: #222;
+  border-radius: 12px;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer {
+  text-align: center;
+  color: #777;
+  margin-top: 25px;
+  font-size: 13px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <h1>🖤 Black & White Romantic Couple Portrait</h1>
+    <p>AI Image Generation Prompt</p>
+  </div>
+
+  <div class="card">
+
+    <span class="category">Couple • Portrait • Cinematic</span>
+
+    <div class="prompt-box">
+
+      <button class="copy-btn" onclick="copyPrompt()">
+        📋 Copy Prompt
+      </button>
+
+      <pre id="prompt">black-and-white portrait of the uploaded couple, preserving their exact facial identities. Man leaning gracefully from above toward the woman, woman looking upward at him, faces extremely close but not touching. Dramatic pure-black man background, strong silver rim lighting outlining hair and facial contours, deep shadows, natural skin texture, realistic hair strands, subtle flower-shaped earring, dark satin blouse and dark formal jacket. Man Luxury fine-art editorial photography, intimate romantic mood, 85mm lens, f/2, shallow depth of field, high contrast, rich blacks, soft highlights, subtle film grain, photorealistic 8K, exact 4.5vertical, no text, watermark, logo, distortion, plastic skin, or color.</pre>
+
+    </div>
+
+    <div class="info">
+      💡 Tip: Upload the couple's reference image and use this prompt.
+      Keep the original facial identities unchanged.
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2026 jigsaw_fouji • AI Prompts
+  </div>
+
+</div>
+
+<script>
+function copyPrompt() {
+  const prompt = document.getElementById("prompt").innerText;
+
+  navigator.clipboard.writeText(prompt).then(function() {
+    const button = document.querySelector(".copy-btn");
+    button.innerText = "✅ Prompt Copied!";
+    
+    setTimeout(function() {
+      button.innerText = "📋 Copy Prompt";
+    }, 2000);
+  });
+}
+</script>
+
+</body>
+</html>
