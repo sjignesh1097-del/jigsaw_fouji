@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<meta name="description" content="Cinematic AI video prompts by jigsaw_fouji.">
+<title>Fauji Cinematic Walk — AI Video | jigsaw_fouji</title>
+
+<style>
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  background:#090a0f;
+  color:#f5f5f7;
+  font-family:Arial,sans-serif;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.wrap{
+  max-width:1120px;
+  margin:auto;
+  padding:0 5%;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:5;
+  background:#0d0e14ee;
+  border-bottom:1px solid #292b35;
+  backdrop-filter:blur(10px);
+}
+
+nav{
+  height:68px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:23px;
+  font-weight:900;
+}
+
+.logo b{
+  color:#9b6cff;
+}
+
+nav a{
+  margin-left:18px;
+  color:#bbb;
+  font-size:14px;
+}
+
+.hero{
+  text-align:center;
+  padding:65px 0;
+  background:radial-gradient(circle at top,#301957,#090a0f 62%);
+}
+
+.badge,
+.tag{
+  display:inline-block;
+  padding:7px 11px;
+  border-radius:20px;
+  background:#26183b;
+  color:#d8c6ff;
+  font-size:12px;
+}
+
+h1{
+  font-size:clamp(38px,7vw,65px);
+  margin:16px 0;
+}
+
+.grad{
+  color:#a978ff;
+}
+
+.muted{
+  color:#999daa;
+  line-height:1.6;
+}
+
+section{
+  padding:45px 0;
+}
+
+.card{
+  background:#11131a;
+  border:1px solid #292c37;
+  border-radius:18px;
+  overflow:hidden;
+  margin-bottom:30px;
+}
+
+.thumb{
+  height:150px;
+  display:grid;
+  place-items:center;
+  font-size:45px;
+  background:linear-gradient(135deg,#24133a,#12151d);
+}
+
+.body{
+  padding:22px;
+}
+
+.body h2{
+  margin-top:10px;
+}
+
+.body p{
+  font-size:14px;
+  color:#999daa;
+  line-height:1.5;
+}
+
+.promptbox{
+  background:#090a0f;
+  border:1px solid #282b36;
+  border-radius:14px;
+  padding:18px;
+  white-space:pre-wrap;
+  line-height:1.6;
+  color:#c9cad3;
+  max-height:520px;
+  overflow:auto;
+}
+
+.actions{
+  display:flex;
+  gap:8px;
+  margin-top:14px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  background:#7c3aed;
+  color:#fff;
+  border:0;
+  border-radius:10px;
+  padding:12px 17px;
+  font-weight:800;
+  cursor:pointer;
+  flex:1;
+  min-width:130px;
+}
+
+.btn:hover{
+  opacity:.9;
+}
+
+.share{
+  background:#222532!important;
+}
+
+.video{
+  margin-top:20px;
+  padding:30px;
+  border:1px solid #292c37;
+  border-radius:18px;
+  background:#11131a;
+  text-align:center;
+}
+
+.new-card{
+  border:1px solid #5734a5;
+  box-shadow:0 0 25px rgba(124,58,237,.12);
+}
+
+.new-title{
+  color:#c9b5ff;
+}
+
+.info{
+  padding:14px 16px;
+  margin:15px 0;
+  background:#171321;
+  border-left:4px solid #7c3aed;
+  border-radius:8px;
+  color:#bdb8c9;
+  font-size:13px;
+  line-height:1.6;
+}
+
+footer{
+  border-top:1px solid #252733;
+  padding:28px 0;
+  color:#858895;
+  text-align:center;
+  font-size:13px;
+}
+
+@media(max-width:750px){
+  nav div:last-child{
+    display:none;
+  }
+
+  .body{
+    padding:16px;
+  }
+}
+
+@media(max-width:520px){
+  .btn{
+    flex:100%;
+  }
+
+  .promptbox{
+    font-size:13px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="index.html">
+        <b>jigsaw</b>_fouji
+      </a>
+
+      <div>
+        <a href="index.html">Home</a>
+        <a href="index.html#categories">Categories</a>
+        <a href="index.html#latest">Latest</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+<section>
+<div class="wrap">
+
+  <!-- OLD PROMPT -->
+  <div class="card">
+
+    <div class="thumb">🪖</div>
+
+    <div class="body">
+
+      <span class="tag">Fauji</span>
+
+      <h1>Fauji Cinematic Walk — AI Video</h1>
+
+      <p class="muted">
+        A powerful cinematic uniform walk concept for AI video generation.
+      </p>
+
+      <h2>📋 Original Prompt</h2>
+
+      <div class="promptbox" id="oldPrompt">Create a photorealistic cinematic fauji walking sequence. Preserve the exact identity and face from the reference image. Keep uniform details consistent, natural posture, realistic walking physics, accurate hands and fingers and controlled confident body language. Use cinematic camera movement, realistic lighting, natural depth of field and high-detail textures. No facial changes, identity drift, flickering or distorted anatomy.</div>
+
+      <div class="actions">
+        <button class="btn" onclick="copyText('oldPrompt')">
+          📋 Copy Prompt
+        </button>
+
+        <button class="btn share" onclick="shareText('oldPrompt','Fauji Cinematic Walk')">
+          📤 Share
+        </button>
+
+        <button class="btn share" onclick="whatsappText('oldPrompt')">
+          WhatsApp
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- NEW VIDEO PROMPT -->
+  <div class="card new-card">
+
+    <div class="thumb">🎬</div>
+
+    <div class="body">
+
+      <span class="tag">NEW • 10 SECOND VIDEO</span>
+
+      <h2 class="new-title">
+        🎥 Mountain Cinematic — 4 Shot Video
+      </h2>
+
+      <p class="muted">
+        Exact 10-second, 16:9 cinematic video prompt with
+        <b>@IMAGE1</b> as the strict character identity reference.
+      </p>
+
+      <div class="info">
+        <b>Video Settings:</b><br>
+        10 seconds • 16:9 landscape • 30 FPS • real-time speed •
+        ultra-photorealistic live-action • 4 chronological shots
+      </div>
+
+      <h2>📋 New Video Prompt</h2>
+
+      <div class="promptbox" id="newPrompt">Create an exact 10-second, 16:9 landscape, 30fps, normal real-time-speed, ultra-photorealistic cinematic live-action video using @IMAGE1 as the strict character identity reference. Preserve the exact facial identity, facial structure, skin tone, hairstyle, and natural facial features from @IMAGE1 without face replacement, morphing, beautification, age change, or identity drift. @IMAGE1 controls only the character’s identity; the written instructions control all clothing, actions, locations, framing, camera behavior, and timing. Reproduce the following four shots in chronological order, using direct cuts and natural real-time movement. Keep the character clearly visible and retain natural outdoor exposure; do not apply an excessively dark or high-contrast cinematic look.
+
+SHOT 1 — 0.00–2.48 sec: Wide, full-body side view of a young man walking slowly toward screen-right across a grassy, rocky mountain hillside. He wears a dark blue-and-black checkered long-sleeve shirt, loose black trousers, and dark sneakers. His body stays in side profile, facing right, with his arms relaxed near his sides and his gaze directed ahead. He takes measured steps across the uneven ground. The camera pans or tracks gently to the right with him, keeping him in the lower-middle portion of the frame while the background shifts left. A tall dark evergreen tree, a small open-sided roofed pavilion, scattered rocks, a thin pale pole, and a distant hazy mountain slope are visible behind him. Yellow-green grass covers the hillside. Preserve the broad outdoor composition and the slow walking pace.
+
+SHOT 2 — 2.48–5.25 sec: Hard cut to a wide rear view of the man standing on a dark metal bridge above a fast-flowing river. He is near the center of the frame, facing away from the camera and looking toward the distant mountain slope. He wears a dark jacket or long-sleeve top and dark trousers. His hands rest on or near the bridge railing; he makes a small natural arm and upper-body adjustment while remaining in place. The bridge’s horizontal metal railing and heavy crisscrossing support beams span the frame. Pale rushing water is visible beneath the bridge, with a steep gray-green mountain slope rising behind him. Keep the camera fixed and preserve the rear-facing view.
+
+SHOT 3 — 5.25–7.36 sec: Hard cut to a front three-quarter, nearly full-body shot of the man seated on a large gray rock on the grassy hillside. He wears the dark blue-and-black checkered shirt, black trousers, and dark sneakers. His legs are apart, both feet resting on the ground, and his hands are loosely joined in front of his lap. His torso faces mostly toward the camera while his head turns toward screen-left and slightly upward. He remains seated, making only subtle natural posture and head movement. Behind him is a tall evergreen tree, a small roofed pavilion on the hillside, scattered rocks, yellow-green grass, and distant blue-gray mountain slopes. Keep the camera static and retain the full seated pose.
+
+SHOT 4 — 7.36–10.00 sec: Hard cut to a wide rear three-quarter view of the man sitting on a grassy riverbank, positioned in the lower-left portion of the frame and facing screen-right toward the water. He wears a dark jacket or long-sleeve top and dark trousers. His legs extend forward along the sloping bank, and his hands rest near his lap or on the ground for support. He remains seated, looking across the stream. A pale turquoise river flows along the lower-right side of the frame; rocks line the water’s edge, and dense evergreen trees fill the opposite bank and upper background. Bright patches of sunlight fall across the grass and foliage. Keep the camera fixed and preserve the seated rear-facing composition through the final frame.
+
+GLOBAL RULES: Preserve the distinct clothing and framing visible in each shot; do not force wardrobe continuity where the shots show different outfits. Maintain the same character identity throughout. Use natural outdoor lighting and realistic movement in the river and foliage.</div>
+
+      <div class="actions">
+
+        <button class="btn" onclick="copyText('newPrompt')">
+          📋 Copy New Prompt
+        </button>
+
+        <button class="btn share" onclick="shareText('newPrompt','Mountain Cinematic 10 Second Video')">
+          📤 Share
+        </button>
+
+        <button class="btn share" onclick="whatsappText('newPrompt')">
+          WhatsApp
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- VIDEO PLACEHOLDER -->
+
+  <h2 style="margin-top:40px">
+    🎥 Example Video
+  </h2>
+
+  <div class="video">
+    <p class="muted">
+      Add your generated example video here later.
+    </p>
+  </div>
+
+</div>
+</section>
+
+
+<footer>
+  <div class="wrap">
+    <a href="index.html">
+      <b>jigsaw_fouji</b>
+    </a>
+    · AI Prompt Hub
+  </div>
+</footer>
+
+
+<script>
+
+function copyText(id){
+
+  const text = document.getElementById(id).innerText;
+
+  navigator.clipboard.writeText(text).then(function(){
+
+    alert('Prompt copied successfully!');
+
+  }).catch(function(){
+
+    alert('Unable to copy prompt.');
+
+  });
+
+}
+
+
+function shareText(id,title){
+
+  const text = document.getElementById(id).innerText;
+
+  if(navigator.share){
+
+    navigator.share({
+      title:title,
+      text:text,
+      url:location.href
+    });
+
+  }else{
+
+    navigator.clipboard.writeText(text);
+
+    alert('Prompt copied!');
+
+  }
+
+}
+
+
+function whatsappText(id){
+
+  const text = document.getElementById(id).innerText;
+
+  const message =
+    'Check this jigsaw_fouji AI video prompt:\n\n' +
+    text +
+    '\n\n' +
+    location.href;
+
+  location.href =
+    'https://wa.me/?text=' +
+    encodeURIComponent(message);
+
+}
+
+</script>
+
+</body>
+</html>
