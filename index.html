@@ -1,86 +1,46 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="jigsaw_fouji — AI video prompts, image prompts, reels ideas and creative AI resources.">
-<title>jigsaw_fouji — AI Prompt & Video Hub</title><style>*{box-sizing:border-box}body{margin:0;background:#090a0f;color:#f5f5f7;font-family:Arial,sans-serif}a{text-decoration:none;color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 5%}header{position:sticky;top:0;z-index:5;background:#0d0e14ee;border-bottom:1px solid #292b35;backdrop-filter:blur(10px)}nav{height:68px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:23px;font-weight:900}.logo b{color:#9b6cff}nav a{margin-left:18px;color:#bbb;font-size:14px}.hero{text-align:center;padding:65px 0;background:radial-gradient(circle at top,#301957,#090a0f 62%)}.badge,.tag{display:inline-block;padding:7px 11px;border-radius:20px;background:#26183b;color:#d8c6ff;font-size:12px}h1{font-size:clamp(38px,7vw,65px);margin:16px 0}.grad{color:#a978ff}.muted{color:#999daa;line-height:1.6}.search{max-width:650px;margin:25px auto;display:flex;background:#12141c;border:1px solid #30333f;border-radius:14px;padding:5px}.search input{flex:1;background:none;border:0;outline:0;color:#fff;padding:13px;font-size:15px}.btn{background:#7c3aed;color:#fff;border:0;border-radius:10px;padding:12px 17px;font-weight:800;cursor:pointer}section{padding:45px 0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}.card{background:#11131a;border:1px solid #292c37;border-radius:18px;overflow:hidden}.thumb{height:150px;display:grid;place-items:center;font-size:45px;background:linear-gradient(135deg,#24133a,#12151d)}.body{padding:18px}.body h3{margin:10px 0 7px}.body p{font-size:14px;color:#999daa;line-height:1.5}.actions{display:flex;gap:8px;margin-top:14px}.actions .btn{flex:1;text-align:center}.share{background:#222532!important}.promptbox{background:#090a0f;border:1px solid #282b36;border-radius:14px;padding:18px;white-space:pre-wrap;line-height:1.6;color:#c9cad3}.video{margin-top:20px;padding:30px;border:1px solid #292c37;border-radius:18px;background:#11131a}footer{border-top:1px solid #252733;padding:28px 0;color:#858895;text-align:center;font-size:13px}@media(max-width:750px){.grid{grid-template-columns:1fr 1fr}nav div:last-child{display:none}}@media(max-width:520px){.grid{grid-template-columns:1fr}}</style></head><body>
-<header><div class="wrap"><nav><a class="logo" href="index.html"><b>jigsaw</b>_fouji</a>
-<div><a href="#categories">Categories</a><a href="#latest">Latest</a><a href="#popular">Popular</a><a href="#videos">Videos</a></div></nav></div></header>
-
-<div class="hero"><div class="wrap"><div class="badge">🤖 AI PROMPT & VIDEO HUB</div>
-<h1>Welcome to <span class="grad">jigsaw_fouji</span></h1>
-<p class="muted">AI Video Prompts • AI Image Prompts • Reels Ideas • Creative Tools — all in one place.</p>
-<div class="search"><input id="q" placeholder="Search car, couple, fauji, cinematic..."><button class="btn" onclick="findCards()">Search</button></div></div></div>
-
-<section id="categories"><div class="wrap"><h2>Explore Categories</h2><p class="muted">Find everything quickly.</p>
-<div class="grid">
-<div class="card"><div class="body"><div class="thumb">🎬</div><h3>AI Video</h3><p>Video-generation prompts and cinematic concepts.</p></div></div>
-<div class="card"><div class="body"><div class="thumb">🖼️</div><h3>AI Image</h3><p>Professional photo and image-generation prompts.</p></div></div>
-<div class="card"><div class="body"><div class="thumb">❤️</div><h3>Couple</h3><p>Romantic and couple creative prompts.</p></div></div>
-<div class="card"><div class="body"><div class="thumb">🪖</div><h3>Fauji</h3><p>Uniform, duty and cinematic fauji concepts.</p></div></div>
-<div class="card"><div class="body"><div class="thumb">📱</div><h3>Reels & Social</h3><p>Short-video concepts, captions and keywords.</p></div></div>
-<div class="card"><div class="body"><div class="thumb">🤖</div><h3>AI Tools</h3><p>Useful AI resources collected in one place.</p></div></div>
+<title>jigsaw_fouji — AI Prompt & Video Hub</title>
+<style>
+*{box-sizing:border-box}:root{color-scheme:dark}body{margin:0;background:#090a0f;color:#f5f5f7;font-family:Arial,sans-serif}a{text-decoration:none;color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 5%}header{position:sticky;top:0;z-index:5;background:#0d0e14ee;border-bottom:1px solid #292b35;backdrop-filter:blur(10px)}nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:12px}.logo{font-size:23px;font-weight:900;white-space:nowrap}.logo b{color:#9b6cff}nav a:not(.logo){margin-left:16px;color:#bbb;font-size:14px}.hero{text-align:center;padding:58px 0;background:radial-gradient(circle at top,#301957,#090a0f 62%)}.badge,.tag{display:inline-block;padding:7px 11px;border-radius:20px;background:#26183b;color:#d8c6ff;font-size:12px}h1{font-size:clamp(36px,7vw,62px);margin:16px 0}.grad{color:#a978ff}.muted{color:#999daa;line-height:1.6}.search{max-width:650px;margin:25px auto;display:flex;gap:7px;background:#12141c;border:1px solid #30333f;border-radius:14px;padding:5px}.search input{min-width:0;flex:1;background:none;border:0;outline:0;color:#fff;padding:13px;font-size:15px}.btn{display:inline-flex;align-items:center;justify-content:center;background:#7c3aed;color:#fff;border:0;border-radius:10px;padding:12px 15px;font-weight:800;cursor:pointer;font-size:14px}section{padding:38px 0;scroll-margin-top:75px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:22px}.card{background:#11131a;border:1px solid #292c37;border-radius:18px;overflow:hidden;min-width:0}.thumb{height:125px;display:grid;place-items:center;font-size:45px;background:linear-gradient(135deg,#24133a,#12151d)}.body{padding:18px}.body h3{margin:10px 0 7px;line-height:1.3}.body p{font-size:14px;color:#999daa;line-height:1.5}.actions{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}.actions .btn{flex:1;text-align:center}.share{background:#222532}.category-card{cursor:pointer;transition:border-color .15s,transform .15s}.category-card:hover,.category-card:focus{border-color:#8055d9;transform:translateY(-2px);outline:none}.category-card .body{padding:16px}.category-card .thumb{height:90px}.category-card p{margin-bottom:2px}.filterbar{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.filter-btn{background:#191b25;color:#d8d9e1;border:1px solid #303342;border-radius:999px;padding:9px 13px;font-weight:700;cursor:pointer}.filter-btn.active{background:#7c3aed;border-color:#7c3aed;color:#fff}.empty{display:none;background:#11131a;border:1px solid #292c37;padding:22px;border-radius:14px;color:#aeb1bf}.video{margin-top:20px;padding:26px;border:1px solid #292c37;border-radius:18px;background:#11131a}footer{border-top:1px solid #252733;padding:28px 0;color:#858895;text-align:center;font-size:13px}@media(max-width:750px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}nav a:not(.logo){margin-left:8px;font-size:12px}}@media(max-width:520px){.grid{grid-template-columns:1fr}.hero{padding:42px 0}.wrap{padding-left:5%;padding-right:5%}.thumb{height:105px}nav{height:auto;min-height:64px}nav div:last-child{display:flex;flex-wrap:wrap;justify-content:flex-end}nav a:not(.logo){font-size:11px;margin-left:8px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav><a class="logo" href="index.html"><b>jigsaw</b>_fouji</a><div><a href="#categories">Categories</a><a href="#latest">Latest</a><a href="#popular">Popular</a><a href="#videos">Videos</a></div></nav></div></header>
+<div class="hero"><div class="wrap"><div class="badge">🤖 AI PROMPT & VIDEO HUB</div><h1>Welcome to <span class="grad">jigsaw_fouji</span></h1><p class="muted">AI Video Prompts • AI Image Prompts • Reels Ideas • Creative Tools — all in one place.</p><div class="search"><input id="q" type="search" placeholder="Search car, couple, fauji, cinematic..." aria-label="Search prompts"><button class="btn" id="searchBtn">Search</button></div></div></div>
+<section id="categories"><div class="wrap"><h2>Explore Categories</h2><p class="muted">Choose a category to see matching prompts.</p><div class="grid">
+<a class="card category-card" href="#latest" data-filter="AI Video"><div class="thumb">🎬</div><div class="body"><h3>AI Video</h3><p>Car commercials, convoy, cinematic walks and video ideas.</p></div></a>
+<a class="card category-card" href="#latest" data-filter="AI Image"><div class="thumb">🖼️</div><div class="body"><h3>AI Image</h3><p>Portraits, facial identity and image-generation prompts.</p></div></a>
+<a class="card category-card" href="#latest" data-filter="Couple"><div class="thumb">❤️</div><div class="body"><h3>Couple</h3><p>Romantic couple photo and video prompts.</p></div></a>
+<a class="card category-card" href="#latest" data-filter="Fauji"><div class="thumb">🪖</div><div class="body"><h3>Fauji</h3><p>Uniform, duty and cinematic fauji concepts.</p></div></a>
+<a class="card category-card" href="#latest" data-filter="Reels & Social"><div class="thumb">📱</div><div class="body"><h3>Reels & Social</h3><p>Short-video concepts, captions and keywords.</p></div></a>
+<a class="card category-card" href="#latest" data-filter="AI Tools"><div class="thumb">🤖</div><div class="body"><h3>AI Tools</h3><p>Useful AI resources collected in one place.</p></div></a>
 </div></div></section>
-
-<section id="latest"><div class="wrap"><h2>🆕 Latest Prompts</h2><p class="muted">Newest additions to jigsaw_fouji.</p>
-<div class="grid">
-
-<article class="card" data-key="strict facial features — ai prompt image">
-<div class="thumb">🤖</div><div class="body"><span class="tag">AI Image</span>
-<h3>Strict Facial Features — AI Prompt</h3><p>Maintains the subject's identity accurately while adapting pose and lighting.</p>
-<div class="actions"><a class="btn" href="prompt.html">View Prompt</a>
-<button class="btn share" onclick="sharePage('Strict Facial Features — AI Prompt','prompt.html')">↗ Share</button></div></div></article>
-
-<article class="card" data-key="mercedes luxury car — cinematic commercial ai video">
-<div class="thumb">🚘</div><div class="body"><span class="tag">AI Video</span>
-<h3>Mercedes Luxury Car — Cinematic Commercial</h3><p>Photorealistic luxury-car commercial with strict face identity preservation.</p>
-<div class="actions"><a class="btn" href="mercedes-luxury-car.html">View Prompt</a>
-<button class="btn share" onclick="sharePage('Mercedes Luxury Car — Cinematic Commercial','mercedes-luxury-car.html')">↗ Share</button></div></div></article><article class="card" data-key="romantic couple — cinematic ai video couple">
-<div class="thumb">❤️</div><div class="body"><span class="tag">Couple</span>
-<h3>Romantic Couple — Cinematic AI Video</h3><p>A cinematic romantic couple video concept with natural movement and premium visual style.</p>
-<div class="actions"><a class="btn" href="romantic-cinematic-couple.html">View Prompt</a>
-<button class="btn share" onclick="sharePage('Romantic Couple — Cinematic AI Video','romantic-cinematic-couple.html')">↗ Share</button></div></div></article><article class="card" data-key="fauji cinematic walk — ai video fauji">
-<div class="thumb">🪖</div><div class="body"><span class="tag">Fauji</span>
-<h3>Fauji Cinematic Walk — AI Video</h3><p>A powerful cinematic uniform walk concept for AI video generation.</p>
-<div class="actions"><a class="btn" href="fauji-cinematic-walk.html">View Prompt</a>
-<button class="btn share" onclick="sharePage('Fauji Cinematic Walk — AI Video','fauji-cinematic-walk.html')">↗ Share</button></div></div></article><article class="card" data-key="professional cinematic portrait — ai image ai image">
-<div class="thumb">📸</div><div class="body"><span class="tag">AI Image</span>
-<h3>Professional Cinematic Portrait — AI Image</h3><p>A professional cinematic portrait prompt designed for realistic image generation.</p>
-<div class="actions"><a class="btn" href="cinematic-portrait.html">View Prompt</a>
-<button class="btn share" onclick="sharePage('Professional Cinematic Portrait — AI Image','cinematic-portrait.html')">↗ Share</button></div></div></article></div></div></section>
- <article class="card" data-key="vip luxury convoy cinematic ai video">
-<div class="thumb">🚘</div><div class="body"><span class="tag">AI Video</span>
-<h3>VIP Luxury Convoy – Cinematic AI Video</h3>
-<p>Luxury SUV convoy, helicopter escort, VIP exit with bodyguard and umbrella, and a paparazzi crowd. Use your own face reference.</p>
-<div class="actions"><a class="btn" href="vip-luxury-convoy.html">View Prompt</a>
-<button class="btn share" onclick="sharePage('VIP Luxury Convoy – Cinematic AI Video','vip-luxury-convoy.html')">Share</button></div></div>
-</article>
-
-<section id="popular"><div class="wrap"><h2>🔥 Popular Prompts</h2><p class="muted">Prompts ready for sharing.</p>
-<div class="grid"><article class="card" data-key="mercedes luxury car — cinematic commercial ai video">
-<div class="thumb">🚘</div><div class="body"><span class="tag">AI Video</span>
-<h3>Mercedes Luxury Car — Cinematic Commercial</h3><p>Photorealistic luxury-car commercial with strict face identity preservation.</p>
-<div class="actions"><a class="btn" href="mercedes-luxury-car.html">View Prompt</a>
-<button class="btn share" onclick="sharePage('Mercedes Luxury Car — Cinematic Commercial','mercedes-luxury-car.html')">↗ Share</button></div></div></article><article class="card" data-key="professional cinematic portrait — ai image ai image">
-<div class="thumb">📸</div><div class="body"><span class="tag">AI Image</span>
-<h3>Professional Cinematic Portrait — AI Image</h3><p>A professional cinematic portrait prompt designed for realistic image generation.</p>
-<div class="actions"><a class="btn" href="cinematic-portrait.html">View Prompt</a>
-<button class="btn share" onclick="sharePage('Professional Cinematic Portrait — AI Image','cinematic-portrait.html')">↗ Share</button></div></div></article><article class="card" data-key="romantic couple — cinematic ai video couple">
-<div class="thumb">❤️</div><div class="body"><span class="tag">Couple</span>
-<h3>Romantic Couple — Cinematic AI Video</h3><p>A cinematic romantic couple video concept with natural movement and premium visual style.</p>
-<div class="actions"><a class="btn" href="romantic-cinematic-couple.html">View Prompt</a>
-<button class="btn share" onclick="sharePage('Romantic Couple — Cinematic AI Video','romantic-cinematic-couple.html')">↗ Share</button></div></div></article></div></div></section>
-
-<section id="videos"><div class="wrap"><h2>🎥 Video Gallery</h2><p class="muted">Your generated videos can be added here.</p>
-<div class="video"><h3>Featured AI Video</h3><p class="muted">This section is ready for video embeds and links.</p></div></div></section>
-
+<section id="latest"><div class="wrap"><h2>🆕 Latest Prompts</h2><p class="muted">Newest additions to jigsaw_fouji.</p><div class="filterbar" aria-label="Filter prompts"><button class="filter-btn active" data-filter="All">All</button><button class="filter-btn" data-filter="AI Video">AI Video</button><button class="filter-btn" data-filter="AI Image">AI Image</button><button class="filter-btn" data-filter="Couple">Couple</button><button class="filter-btn" data-filter="Fauji">Fauji</button><button class="filter-btn" data-filter="Reels & Social">Reels & Social</button><button class="filter-btn" data-filter="AI Tools">AI Tools</button></div><div class="grid" id="promptGrid">
+<article class="card prompt-card" data-category="AI Video" data-key="vip luxury convoy cinematic ai video car suv helicopter paparazzi"><div class="thumb">🚘</div><div class="body"><span class="tag">AI Video</span><h3>VIP Luxury Convoy — Cinematic AI Video</h3><p>Luxury SUV convoy, helicopter escort, VIP exit with a bodyguard and umbrella, and a paparazzi crowd. Use your own face reference.</p><div class="actions"><a class="btn" href="vip-luxury-convoy.html">View Prompt</a><button class="btn share" data-title="VIP Luxury Convoy — Cinematic AI Video" data-file="vip-luxury-convoy.html">↗ Share</button></div></div></article>
+<article class="card prompt-card" data-category="AI Image" data-key="strict facial features ai prompt image face identity reference"><div class="thumb">🤖</div><div class="body"><span class="tag">AI Image</span><h3>Strict Facial Features — AI Prompt</h3><p>Maintains the subject's identity accurately while adapting pose and lighting.</p><div class="actions"><a class="btn" href="prompt.html">View Prompt</a><button class="btn share" data-title="Strict Facial Features — AI Prompt" data-file="prompt.html">↗ Share</button></div></div></article>
+<article class="card prompt-card" data-category="AI Video" data-key="mercedes luxury car cinematic commercial ai video"><div class="thumb">🚘</div><div class="body"><span class="tag">AI Video</span><h3>Mercedes Luxury Car — Cinematic Commercial</h3><p>Photorealistic luxury-car commercial with strict face identity preservation.</p><div class="actions"><a class="btn" href="mercedes-luxury-car.html">View Prompt</a><button class="btn share" data-title="Mercedes Luxury Car — Cinematic Commercial" data-file="mercedes-luxury-car.html">↗ Share</button></div></div></article>
+<article class="card prompt-card" data-category="Couple" data-key="romantic couple cinematic ai video photo"><div class="thumb">❤️</div><div class="body"><span class="tag">Couple</span><h3>Romantic Couple — Cinematic AI Video</h3><p>A cinematic romantic couple video concept with natural movement and premium visual style.</p><div class="actions"><a class="btn" href="romantic-cinematic-couple.html">View Prompt</a><button class="btn share" data-title="Romantic Couple — Cinematic AI Video" data-file="romantic-cinematic-couple.html">↗ Share</button></div></div></article>
+<article class="card prompt-card" data-category="Fauji" data-key="fauji cinematic walk ai video uniform military"><div class="thumb">🪖</div><div class="body"><span class="tag">Fauji</span><h3>Fauji Cinematic Walk — AI Video</h3><p>A powerful cinematic uniform walk concept for AI video generation.</p><div class="actions"><a class="btn" href="fauji-cinematic-walk.html">View Prompt</a><button class="btn share" data-title="Fauji Cinematic Walk — AI Video" data-file="fauji-cinematic-walk.html">↗ Share</button></div></div></article>
+<article class="card prompt-card" data-category="AI Image" data-key="professional cinematic portrait ai image"><div class="thumb">📸</div><div class="body"><span class="tag">AI Image</span><h3>Professional Cinematic Portrait — AI Image</h3><p>A professional cinematic portrait prompt designed for realistic image generation.</p><div class="actions"><a class="btn" href="cinematic-portrait.html">View Prompt</a><button class="btn share" data-title="Professional Cinematic Portrait — AI Image" data-file="cinematic-portrait.html">↗ Share</button></div></div></article>
+</div><p class="empty" id="emptyState">No prompts in this category yet. New resources will appear here when added.</p></div></section>
+<section id="popular"><div class="wrap"><h2>🔥 Popular Prompts</h2><p class="muted">Quick access to frequently used prompts.</p><div class="grid">
+<article class="card"><div class="thumb">🚘</div><div class="body"><span class="tag">AI Video</span><h3>Mercedes Luxury Car — Cinematic Commercial</h3><p>Photorealistic luxury-car commercial with face identity preservation.</p><div class="actions"><a class="btn" href="mercedes-luxury-car.html">View Prompt</a><button class="btn share" data-title="Mercedes Luxury Car — Cinematic Commercial" data-file="mercedes-luxury-car.html">↗ Share</button></div></div></article>
+<article class="card"><div class="thumb">❤️</div><div class="body"><span class="tag">Couple</span><h3>Romantic Couple — Cinematic AI Video</h3><p>Cinematic romantic couple video concept.</p><div class="actions"><a class="btn" href="romantic-cinematic-couple.html">View Prompt</a><button class="btn share" data-title="Romantic Couple — Cinematic AI Video" data-file="romantic-cinematic-couple.html">↗ Share</button></div></div></article>
+<article class="card"><div class="thumb">🪖</div><div class="body"><span class="tag">Fauji</span><h3>Fauji Cinematic Walk — AI Video</h3><p>Cinematic uniform walk concept for AI video generation.</p><div class="actions"><a class="btn" href="fauji-cinematic-walk.html">View Prompt</a><button class="btn share" data-title="Fauji Cinematic Walk — AI Video" data-file="fauji-cinematic-walk.html">↗ Share</button></div></div></article>
+</div></div></section>
+<section id="videos"><div class="wrap"><h2>🎥 Video Gallery</h2><p class="muted">Your generated videos can be added here.</p><div class="video"><h3>Featured AI Video</h3><p class="muted">This section is ready for video embeds and links.</p></div></div></section>
 <footer><div class="wrap"><b>jigsaw_fouji</b><br>AI Prompts • AI Videos • Creative Tools<br><br>© 2026 jigsaw_fouji</div></footer>
 <script>
-function findCards(){
- let q=document.getElementById('q').value.toLowerCase().trim();
- document.querySelectorAll('#latest .card,#popular .card').forEach(c=>c.style.display=(!q||c.dataset.key.includes(q))?'block':'none');
- document.getElementById('latest').scrollIntoView({behavior:'smooth'});
-}
-function sharePage(t,f){
- let u=new URL(f,location.href).href;
- if(navigator.share) navigator.share({title:t,text:'jigsaw_fouji prompt: '+t,url:u});
- else {navigator.clipboard.writeText(u);alert('Link copied!');}
-}
-</script></body></html>
+const promptCards=[...document.querySelectorAll('.prompt-card')],filterButtons=[...document.querySelectorAll('.filter-btn')],emptyState=document.getElementById('emptyState');let activeFilter='All';
+function applyFilters(){const q=document.getElementById('q').value.trim().toLowerCase();let shown=0;promptCards.forEach(card=>{const categoryMatch=activeFilter==='All'||card.dataset.category===activeFilter;const textMatch=!q||(card.dataset.key+' '+card.innerText).toLowerCase().includes(q);card.style.display=categoryMatch&&textMatch?'':'none';if(categoryMatch&&textMatch)shown++});emptyState.style.display=shown?'none':'block';filterButtons.forEach(button=>button.classList.toggle('active',button.dataset.filter===activeFilter))}
+function setFilter(filter){activeFilter=filter;applyFilters();document.getElementById('latest').scrollIntoView({behavior:'smooth'})}
+filterButtons.forEach(button=>button.addEventListener('click',()=>setFilter(button.dataset.filter)));document.querySelectorAll('.category-card').forEach(card=>card.addEventListener('click',()=>setFilter(card.dataset.filter)));document.getElementById('searchBtn').addEventListener('click',applyFilters);document.getElementById('q').addEventListener('keydown',event=>{if(event.key==='Enter')applyFilters()});
+document.querySelectorAll('.share').forEach(button=>button.addEventListener('click',async()=>{const url=new URL(button.dataset.file,location.href).href;try{if(navigator.share){await navigator.share({title:button.dataset.title,text:'jigsaw_fouji prompt: '+button.dataset.title,url})}else if(navigator.clipboard){await navigator.clipboard.writeText(url);alert('Link copied!')}else{prompt('Copy this prompt link:',url)}}catch(error){if(error.name!=='AbortError')prompt('Copy this prompt link:',url)}}));
+</script>
+</body>
+</html>
