@@ -177,6 +177,25 @@ footer{background:#050a07!important;border-top:1px solid #4b3c1f!important;color
 .thumb:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(4,10,7,.62));pointer-events:none}
 @media(max-width:520px){.category-card .thumb{height:88px!important}.prompt-card .thumb{height:105px!important}}
 
+
+/* Cinematic animated Fauji hero background */
+.hero{isolation:isolate;background:linear-gradient(115deg,rgba(4,11,7,.98),rgba(17,35,23,.94) 48%,rgba(50,35,13,.88))!important}
+.hero:before{z-index:-1;background-image:linear-gradient(rgba(230,196,92,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(230,196,92,.055) 1px,transparent 1px)!important;background-size:42px 42px!important;mask-image:linear-gradient(90deg,#000,transparent 95%)!important;animation:foujiGridDrift 24s linear infinite}
+.hero:after{content:"";position:absolute;inset:-30%;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 20% 35%,rgba(94,143,78,.25),transparent 34%),radial-gradient(ellipse at 72% 45%,rgba(232,180,54,.17),transparent 31%),radial-gradient(ellipse at 50% 85%,rgba(185,145,55,.12),transparent 36%);filter:blur(8px);animation:foujiAurora 14s ease-in-out infinite alternate}
+.hero .wrap{z-index:1}
+.hero-art .art-orbit{animation:foujiOrbit 18s linear infinite}
+.hero-art .orbit-two{animation-direction:reverse;animation-duration:26s}
+.hero-art .art-symbol{animation:foujiPulse 4s ease-in-out infinite}
+.hero-art .art-main{animation:foujiFloat 7s ease-in-out infinite;box-shadow:0 30px 80px #000a,inset 0 1px #fff2,0 0 55px rgba(214,174,61,.09)!important}
+.hero-art .float-card-one{animation:foujiFloat 5.5s ease-in-out infinite}
+.hero-art .float-card-two{animation:foujiFloat 6.5s ease-in-out infinite reverse}
+@keyframes foujiGridDrift{from{background-position:0 0,0 0}to{background-position:42px 42px,-42px 0}}
+@keyframes foujiAurora{0%{transform:translate3d(-2%,0,0) scale(1);opacity:.65}100%{transform:translate3d(2%,-2%,0) scale(1.08);opacity:1}}
+@keyframes foujiOrbit{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes foujiPulse{0%,100%{opacity:.8;transform:scale(.96)}50%{opacity:1;transform:scale(1.06)}}
+@keyframes foujiFloat{0%,100%{translate:0 0}50%{translate:0 -7px}}
+@media(prefers-reduced-motion:reduce){.hero:before,.hero:after,.hero-art .art-orbit,.hero-art .art-symbol,.hero-art .art-main,.hero-art .float-card-one,.hero-art .float-card-two{animation:none!important}}
+
 </style>
 </head>
 <body>
