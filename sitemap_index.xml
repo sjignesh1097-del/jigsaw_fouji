@@ -1,15 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://sjignesh1097-del.github.io/jigsaw_fouji/index.html</loc></url>
-  <url><loc>https://sjignesh1097-del.github.io/jigsaw_fouji/black-white-couple-face-lock.html</loc></url>
-  <url><loc>https://sjignesh1097-del.github.io/jigsaw_fouji/black-white-couple-portrait.html</loc></url>
-  <url><loc>https://sjignesh1097-del.github.io/jigsaw_fouji/cinematic-matchstick-throw.html</loc></url>
-  <url><loc>https://sjignesh1097-del.github.io/jigsaw_fouji/cinematic-portrait.html</loc></url>
-  <url><loc>https://sjignesh1097-del.github.io/jigsaw_fouji/fauji-cinematic-walk.html</loc></url>
-  <url><loc>https://sjignesh1097-del.github.io/jigsaw_fouji/mercedes-luxury-car.html</loc></url>
-  <url><loc>https://sjignesh1097-del.github.io/jigsaw_fouji/prompt.html</loc></url>
-  <url><loc>https://sjignesh1097-del.github.io/jigsaw_fouji/romantic-cinematic-couple.html</loc></url>
-  <url><loc>https://sjignesh1097-del.github.io/jigsaw_fouji/royal-typographic-portrait.html</loc></url>
-  <url><loc>https://sjignesh1097-del.github.io/jigsaw_fouji/saree-multi-pose-collage.html</loc></url>
-  <url><loc>https://sjignesh1097-del.github.io/jigsaw_fouji/vip-luxury-convoy.html</loc></url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap><loc>https://sjignesh1097-del.github.io/jigsaw_fouji/sitemap.xml</loc></sitemap>
+</sitemapindex>
