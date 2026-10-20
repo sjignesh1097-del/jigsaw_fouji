@@ -196,11 +196,47 @@ footer{background:#050a07!important;border-top:1px solid #4b3c1f!important;color
 @keyframes foujiFloat{0%,100%{translate:0 0}50%{translate:0 -7px}}
 @media(prefers-reduced-motion:reduce){.hero:before,.hero:after,.hero-art .art-orbit,.hero-art .art-symbol,.hero-art .art-main,.hero-art .float-card-one,.hero-art .float-card-two{animation:none!important}}
 
+
+/* Jigsaw Fouji creator photo gallery */
+.creator-section{padding:54px 0 60px;background:linear-gradient(115deg,#0b1710,#10130d 58%,#1d170b);border-bottom:1px solid #514222}
+.creator-layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:44px;align-items:center}
+.creator-gallery{position:relative;display:grid;grid-template-columns:1.35fr .72fr;gap:12px;min-height:310px}
+.creator-main-photo,.creator-side-photos img{overflow:hidden;border:1px solid #9a7a35;border-radius:16px;background:#101710;box-shadow:0 18px 48px #0007}
+.creator-main-photo img,.creator-side-photos img{width:100%;height:100%;display:block;object-fit:cover}
+.creator-main-photo{min-height:310px}.creator-side-photos{display:grid;grid-template-rows:1fr 1fr;gap:12px;min-height:310px}
+.creator-side-photos img{min-height:0;max-height:150px;object-position:center 25%}
+.creator-stamp{position:absolute;bottom:14px;left:14px;padding:8px 12px;border-radius:8px;background:#090f0be8;border:1px solid #d9b64d;color:#f4d36b;font-size:10px;letter-spacing:1.5px;font-weight:800}
+.creator-copy h2{font-size:clamp(28px,4vw,42px);line-height:1.1;margin:15px 0}
+.creator-copy .grad{background:linear-gradient(90deg,#f6d96b,#e6a72f,#f4eee0);background-clip:text;-webkit-background-clip:text;color:transparent}
+.creator-copy p{line-height:1.8}.creator-signature{margin:24px 0 18px;color:#f2d16b;font-weight:900;letter-spacing:2px}.creator-signature span{padding-left:8px}
+@media(max-width:700px){.creator-layout{grid-template-columns:1fr;gap:26px}.creator-gallery{min-height:270px}.creator-main-photo{min-height:270px}.creator-side-photos{min-height:270px}.creator-side-photos img{max-height:129px}.creator-section{padding:38px 0}}
+
 </style>
 </head>
 <body>
 <header><div class="wrap"><nav><a class="logo" href="index.html"><b>jigsaw</b>_fouji</a><div><a href="#categories">Categories</a><a href="#latest">Latest</a><a href="#popular">Popular</a><a href="#videos">Videos</a><a href="#contact">Contact</a></div></nav></div></header>
 <div class="hero"><div class="wrap hero-layout"><div class="hero-copy"><div class="badge">★ AI PROMPT & VIDEO HUB · FAUJI EDITION</div><h1>Jigsaw <span class="grad">Fouji</span><br><span style="font-size:.52em;letter-spacing:.2px">AI Prompts for a Bolder Tomorrow</span></h1><p class="muted">Cinematic AI prompts, image ideas and video concepts — inspired by Indian Fauji spirit.</p><div class="search"><input id="q" type="search" placeholder="Search prompts, styles, ideas..." aria-label="Search prompts"><button class="btn" id="searchBtn">Search ↗</button></div><div class="hero-links"><a class="btn primary-cta" href="#latest">Explore prompts <span>↗</span></a><a class="text-cta" href="#categories">Browse categories ↓</a></div><div class="hero-proof"><span>★ Curated prompt library</span><span>★ Made for creators</span></div></div><div class="hero-art" aria-label="AI creator showcase"><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-topline"><span>JIGSAW / LAB</span><span class="live-dot">● LIVE IDEAS</span></div><div class="art-main"><div class="art-symbol">★</div><div class="art-kicker">THE FAUJI CREATOR HUB</div><div class="art-title">CREATE<br><em>WITH HONOUR.</em></div><div class="art-bottom"><span>AI VIDEO · IMAGE · REELS</span><span>J / F</span></div></div><div class="float-card float-card-one"><span class="float-icon">★</span><span><b>Fauji Cinematic</b><small>Ideas with impact</small></span></div><div class="float-card float-card-two"><span class="float-icon">↗</span><span><b>Prompt Library</b><small>Ready for your next creation</small></span></div></div></div></div>
+
+<section id="creator" class="creator-section">
+  <div class="wrap creator-layout">
+    <div class="creator-gallery">
+      <div class="creator-main-photo"><img src="https://raw.githubusercontent.com/sjignesh1097-del/jigsaw_fouji/main/file_00000000230872088b85df4b50775afb.png" alt="Jigsaw Fouji creator portrait" loading="lazy"></div>
+      <div class="creator-side-photos">
+        <img src="https://raw.githubusercontent.com/sjignesh1097-del/jigsaw_fouji/main/file_0000000034a47208a1c7efd1f6e21fae.png" alt="Jigsaw Fouji photo two" loading="lazy">
+        <img src="https://raw.githubusercontent.com/sjignesh1097-del/jigsaw_fouji/main/file_0000000053b48208bd25426f7aa3588d.png" alt="Jigsaw Fouji photo three" loading="lazy">
+      </div>
+      <span class="creator-stamp">J / F · CREATOR</span>
+    </div>
+    <div class="creator-copy">
+      <div class="badge">MEET THE CREATOR</div>
+      <h2>Built with <span class="grad">Fauji spirit.</span></h2>
+      <p class="muted">Welcome to Jigsaw Fouji — a creative hub for cinematic AI prompts, powerful visuals, video concepts and social content ideas.</p>
+      <p class="creator-signature">JIGSAW FOUJI <span>★</span></p>
+      <a class="btn" href="#latest">Explore the prompt library ↗</a>
+    </div>
+  </div>
+</section>
+
 <section id="categories"><div class="wrap"><h2>Explore Categories</h2><p class="muted">Choose a category to see matching prompts.</p><div class="grid">
 <a class="card category-card" href="#latest" data-filter="AI Video"><div class="thumb"><img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=85" alt="Cinematic AI video concept" loading="lazy"></div><div class="body"><h3>AI Video</h3><p>Car commercials, convoy, cinematic walks and video ideas.</p></div></a>
 <a class="card category-card" href="#latest" data-filter="AI Image"><div class="thumb"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=85" alt="AI image portrait inspiration" loading="lazy"></div><div class="body"><h3>AI Image</h3><p>Portraits, facial identity and image-generation prompts.</p></div></a>
